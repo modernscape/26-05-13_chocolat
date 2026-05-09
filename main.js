@@ -250,7 +250,7 @@ class Particle {
     gsap.to(
       {},
       {
-        duration: 5.2,
+        duration: 6.0,
         ease: "none",
         repeat: -1.0,
         // onRepeat: this._setDifussion(),
@@ -272,7 +272,7 @@ class Particle {
   onRaf() {
     if (this.mesh) {
       this.mesh.material.uniforms.u_time.value += 0.001
-      this.mesh.rotation.y += 0.005
+      this.mesh.rotation.y += 0.004
     }
   }
 } // Particle
